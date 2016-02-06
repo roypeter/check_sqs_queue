@@ -35,14 +35,22 @@ sys
 ##Sample config file  ~/.aws/credentials
 ------------------
 [default]
+
 aws_access_key_id = ABCD12345
+
 aws_secret_access_key = ABCD123ABCD123
+
 
 [profile1]
+
 aws_access_key_id = ABCD12345
+
 aws_secret_access_key = ABCD123ABCD123
 
+
 [profile2]
+
 aws_access_key_id = ABCD12345
+
 aws_secret_access_key = ABCD123ABCD123
   
