@@ -5,9 +5,12 @@ import sys
 @click.command()
 @click.argument('queue', type = str)
 @click.argument('profile', type = str)
-@click.option('--region', '-r', default = 'us-west-1', help = 'AWS region.',  type = str)
-@click.option('--warning', '-w', default = 10, help='Warning threshold.', type = int)
-@click.option('--critical', '-c', default = 20, help='Critical threshold.', type = int)
+@click.option('--region', '-r', default = 'us-west-1', help = 'AWS region.',  
+	type = str)
+@click.option('--warning', '-w', default = 10, help='Warning threshold.', 
+	type = int)
+@click.option('--critical', '-c', default = 20, help='Critical threshold.', 
+	type = int)
 
 def check_sqs_queue(queue,profile,region,warning,critical):
 	"""Icinga plugin for checking number of messages in specified SQS queue.
